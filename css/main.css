@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Pacifico ;
+    src: url(../Pacifico/Pacifico-Regular.ttf);
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #F7ECDE;
+    margin: 0;
+    padding: 0;
+}
+
+.container h1
+{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: Pacifico;
+}
+
+.container h1::after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    bottom: 0;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all 0.3s;
+}
+.container h1:hover::after
+{
+    top:30%;
+}
+
+.dashline{
+    border: none;
+    border-top: 3px dotted black;
+}
+
+h2
+{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    color: transparent;
+    background-clip:text;
+}
+div .form-control:focus {
+  border-color: #d99c39 ;
+  box-shadow: 0 0 0 0.25rem #fec26055 ;
+  outline: none ;
+}
