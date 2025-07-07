@@ -72,7 +72,7 @@ function visitbookmark(index) {
 function validationForm(ele) {
 
   var regex = {
-    siteName: /^[A-Z][a-z]{2,10}$/,
+    siteName: /^[A-Z][a-zA-Z]{3,20}$/,
     siteUrl: /^https:\/\/(www|web)\..{1,}\.com/
   }
 
